@@ -1,3 +1,10 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<% var title = "Error Page"; %>
+<%- include('./partials/header.ejs') %>
+
+<div class="w-full h-screen flex flex-col items-center justify-center bg-red-50 px-4 text-center">
+  <h1 class="text-3xl font-bold text-red-700"><%= message %></h1>
+  <h2 class="text-xl text-red-500 mt-2">Error Code: <%= error.status %></h2>
+  <pre class="mt-4 bg-red-100 text-sm text-left p-4 rounded-md max-w-full overflow-x-auto"><%= error.stack %></pre>
+</div>
+
+<%- include('./partials/footer.ejs') %>
