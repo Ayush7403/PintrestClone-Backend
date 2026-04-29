@@ -55,6 +55,7 @@ pin/
 Create a `.env` file in the root directory:
 
 SESSION_SECRET=your_secret_key
+
 MONGO_URI=your_mongodb_connection_string
 
 ## 📥 Installation
