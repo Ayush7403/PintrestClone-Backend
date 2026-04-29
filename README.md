@@ -49,7 +49,6 @@ pin/
 ├── package.json
 └── README.md
 
-
 ## ⚙️ Environment Variables
 
 Create a `.env` file in the root directory:
